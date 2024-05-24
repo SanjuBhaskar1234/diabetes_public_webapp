@@ -53,10 +53,10 @@ if st.button('Diabetes Test Result'):
     
     if (diab_prediction[0] == 1):
         diab_diagnosis1 = Name
-        diab_diagnosis2 = 'The person is diabetic'
+        diab_diagnosis2 = 'The person is diabetic' + Name
     else:
         diab_diagnosis1 = Name
-        diab_diagnosis2 = 'The person is not diabetic'
+        diab_diagnosis2 = 'The person is not diabetic' + Name
         
 st.success(diab_diagnosis1)
 st.success(diab_diagnosis2)
